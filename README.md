@@ -27,6 +27,6 @@ This repository contains the following files:
 
 ## Credit
 
-This example code is based on the tutorial Building a Movie Recommendation Engine in Python using Scikit-Learn by Usman Malik.
+This example code is based on the tutorial Building a Movie Recommendation Engine in Python using Scikit-Learn.
 
 The code for building the recommendation model using Surprise is based on the Surprise documentation.
