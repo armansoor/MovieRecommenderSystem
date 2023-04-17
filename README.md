@@ -1,16 +1,32 @@
-# MovieRecommenderSystem
-An example code for a movie recommender system using Surprise, which is an open-source Python scikit for building and analyzing recommender systems.
+# Movie Recommender System using Surprise
+This is an example code for a movie recommender system using Surprise, an open-source Python scikit for building and analyzing recommender systems.
 
-The Dataset https://archive.ics.uci.edu/ml/datasets/iris
+## Dataset
+The dataset used in this example is the MovieLens 100k dataset (https://archive.ics.uci.edu/ml/datasets/iris). This dataset contains ratings of movies by users, as well as demographic information about the users and the movies.
 
-In this example, we first load the Iris dataset from a CSV file using pd.read_csv. We also load a trained machine learning model from a Pickle file using pickle.load.
+## Usage
+1. To use this example code, you will need to install Surprise and Flask using pip.
 
-We then define a Flask application and create two routes: one for the home page ('/'), and one to handle the form submission ('/predict'). The home page simply returns an HTML template that contains a form for the user to input their measurements. The form is submitted to the '/predict' route using the POST method.
+2. You will also need to download the MovieLens 100k dataset and save it to a file called ratings.csv. You can download the dataset from the MovieLens website.
 
-When the user submits the form, the predict function is called. This function gets the user input from the form using request.form, makes a prediction using the trained model, and returns an HTML template that displays the predicted species.
+3. Once you have the dataset and have installed the necessary packages, you can run the Flask application by running the following command:
 
-Finally, we run the Flask application using app.run.
+python app.py
 
-These templates use the Flask templating language to display the predicted species in the result.html template.
+4. This will start the Flask server, and you can access the application by visiting http://localhost:5000 in your web browser.
 
-To run this example code, you would need to save the Iris dataset to a file called iris.csv and the trained model to a file called iris_model.pkl. You would also need to install Flask using pip install flask.
+## Files
+
+This repository contains the following files:
+
+1. app.py: The Flask application that handles user input and displays recommendations.
+2. models.py: The code for building and training the recommendation model.
+3. utils.py: Utility functions for loading and preprocessing the data.
+4. templates/home.html: The HTML template for the home page.
+5. templates/result.html: The HTML template for displaying the recommended movies.
+
+## Credit
+
+This example code is based on the tutorial Building a Movie Recommendation Engine in Python using Scikit-Learn by Usman Malik.
+
+The code for building the recommendation model using Surprise is based on the Surprise documentation.
